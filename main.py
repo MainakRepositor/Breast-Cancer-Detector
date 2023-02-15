@@ -7,7 +7,7 @@ import streamlit as st
 from web_functions import load_data
 
 # Import pages
-from Tabs import home, data, predict, visualise
+from Tabs import home, data, predict, visualise, about
 
 # Configure the app
 st.set_page_config(
@@ -19,6 +19,7 @@ st.set_page_config(
 # Dictionary for pages
 Tabs = {
     "Home": home,
+    "About": about,
     "Data Info": data,
     "Prediction": predict,
     "Visualisation": visualise
